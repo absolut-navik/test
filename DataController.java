@@ -4,26 +4,6 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
-import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.adt.navik.signals.commons.SignalConstants;
-import com.adt.navik.signals.dto.LexisDataDTO;
-import com.adt.navik.signals.dto.LexisNexisDataDTO;
-import com.adt.navik.signals.dto.LexisNexisDataRequest;
-import com.adt.navik.signals.service.DataService;
-import com.adt.navik.signals.service.SummaryService;
-
 @RestController
 
 @RequestMapping(value = {"/data"})
